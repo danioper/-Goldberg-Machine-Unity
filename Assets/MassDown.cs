@@ -5,9 +5,11 @@ using UnityEngine;
 public class MassDown : MonoBehaviour
 {
     public Rigidbody Rigidbody;
+    public float mass;
     // Start is called before the first frame update
     private void OnTriggerEnter(Collider other)
     {
-        Rigidbody.mass = 0.1f;
+        if (other.CompareTag("ball"))
+        Rigidbody.mass = mass;
     }
 }
