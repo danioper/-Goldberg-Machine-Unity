@@ -15,7 +15,8 @@ public class NewtonDrop : MonoBehaviour
     {
         foreach (var item in tablicaJoint)
         {
-            item.breakForce = 0;
+            if(tablicaJoint != null)
+                item.breakForce = 0;
             yield return new WaitForSeconds(0.2F);
         }
     }
