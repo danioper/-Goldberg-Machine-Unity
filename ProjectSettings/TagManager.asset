@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - ball
+  - BreakableObject
+  - PickUpItem
   layers:
   - Default
   - TransparentFX
@@ -17,9 +19,9 @@ TagManager:
   - Plastic
   - Metal
   - Concrete
-  - 
-  - 
-  - 
+  - C1
+  - C2
+  - C3
   - 
   - 
   - 
